@@ -1,1 +1,69 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package practica5;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+/**
+ *
+ * @author Fernanda
+ */
+public class Practica5 extends JFrame
+{
+
+    JLabel usuario, contrasenia;
+    JTextField tusuario;
+    JPasswordField pcontrasenia;
+    JButton nuevo, acceder;
+
+    public Practica5()
+    {
+        setTitle("Practica 5");
+        setSize(400, 280);
+        setLayout(null);
+        setLocationRelativeTo(null);
+        setResizable(false);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        componentes();
+
+        setVisible(true);
+
+    }
+
+    public void componentes()
+    {
+        usuario = new JLabel("Usuario");
+        usuario.setBounds(50, 50, 100, 30);
+
+        contrasenia = new JLabel("Contraseña");
+        contrasenia.setBounds(50, 100, 100, 30);
+
+        tusuario = new JTextField();
+        tusuario.setBounds(150, 50, 150, 30);
+
+        pcontrasenia = new JPasswordField();
+        pcontrasenia.setBounds(150, 100, 150, 30);
+
+        nuevo = new JButton("Nuevo");
+        nuevo.setBounds(100, 200, 100, 30);
+
+        acceder = new JButton("Acceder");
+        acceder.setBounds(210, 200, 100, 30);
+
+        add(usuario);
+        add(contrasenia);
+        add(tusuario);
+        add(pcontrasenia);
+        add(nuevo);
+        add(acceder);
+    }
+
+}
 
